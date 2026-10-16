@@ -8,8 +8,8 @@
     "npm": "5.6.0"
   },
   "scripts": {
-    "start": "npx -p node@24 -- node index",
-    "server": "npx -p node@24 -- nodemon index",
+    "start": "npx -p node@24 -p npm@11 -- node index",
+    "server": "npx -p node@24 -p npm@11 -- nodemon index",
     "client-install": "npm install --prefix client",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
